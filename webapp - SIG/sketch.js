@@ -20,8 +20,8 @@ let slider
 
 let tripLimit = 1
 
-var dateStart = 'oct'
-var dateEnd = 'feb'
+let dateStart = 'oct'
+let dateEnd = 'feb'
 
 let fullStat = {}
 let offsetStat = {}
