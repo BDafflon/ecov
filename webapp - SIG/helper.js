@@ -51,7 +51,7 @@ function getDate (timestamp) {
   return time
 }
 
-function isHeurePoint (datetime) {
+function isHeurePointe (datetime) {
   const d = new Date(datetime)
   let h = d.getHours()
   if ((h > 7 && h < 9) || (h > 17 && h < 20)) return true
@@ -104,9 +104,6 @@ function dynamicSort (property) {
   }
 }
 
-function getHubs (dataTrip, threshold) {
-  return []
-}
 
 function correspondence (data, trip, dom) {
   trip.forEach(t => {
@@ -144,8 +141,8 @@ function correspondence (data, trip, dom) {
   })
 
   trip.sort(dynamicSort('-trajetCovoit'))
-  bestTranjet = trip[0]
-  bestTranjet.nb = trip[0].rncp.length
+  bestTrajet = trip[0]
+  bestTrajet.nb = trip[0].rncp.length
 
   trip.sort(dynamicSort('timestampStart'))
 }
